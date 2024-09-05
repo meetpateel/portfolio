@@ -148,7 +148,7 @@ header {
 .about-me .highlight {
     font-size: 1.5em;
     color: var(--accent-color);
-    text-align: center;
+
     margin-bottom: 30px;
 }
 
@@ -194,7 +194,10 @@ header {
     font-size: 2.5em;
     margin-bottom: 40px;
     color: var(--header-background);
+	font-weight: bold;
 }
+
+
 
 .timeline-entry {
     display: flex;
@@ -285,12 +288,25 @@ header {
         left: 10%;
     }
 }
+/* Company Logo Styles */
+.company {
+    display: flex;
+    align-items: center; /* Aligns the text and image vertically */
+    gap: 10px; /* Adds space between the text and image */
+}
+
+.company-logo {
+    width: 30px; /* Set the size for the logo */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Ensures alignment with the text */
+}
+
 
 /* Skills Section */
 .skills {
     padding: 80px 20px;
     background-color: var(--background-color);
-    text-align: center;
+    text-align: center; /* Center the header */
 }
 
 .skills h2 {
@@ -300,48 +316,46 @@ header {
     font-weight: bold;
 }
 
-.skills-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.skill-card {
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    padding: 20px;
-    width: 30%;
-    min-width: 250px;
-}
-
-.skill-card h3 {
-    color: var(--header-background);
-    margin-bottom: 15px;
-}
-
-.skill-card ul {
-    list-style: none;
+/* Skills List Container */
+.skills-list {
+    list-style-type: none;
     padding: 0;
+    text-align: left; /* Align the skill items to the left */
+    max-width: 800px; /* Optional: Limit the width of the container */
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    gap: 10px; /* Add spacing between items */
 }
 
-.skill-card li {
+.skills-list li {
+    background-color: #e0f2ff; /* Lighter background for badges */
+    color: #007BFF; /* Text color matches the theme */
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
     font-size: 1.2em;
-    margin-bottom: 10px;
-    color: var(--text-color);
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.skills-list li:hover {
+    background-color: #007BFF; /* Switch to blue on hover */
+    color: #fff; /* White text on hover */
+}
+
+/* Responsive */
 @media (max-width: 768px) {
-    .skills-cards {
-        flex-direction: column;
-        align-items: center;
+    .skills-list {
+        justify-content: left; /* Keep items centered on smaller screens */
     }
 
-    .skill-card {
-        width: 100%;
+    .skills-list li {
+        margin-bottom: 15px;
+        font-size: 1.1em;
     }
 }
+
+
 
 /* Projects Section */
 .projects {
@@ -383,9 +397,7 @@ header {
     font-size: 1.1em;
     line-height: 1.6;
     color: #666;
-}
-
-/* Education Section */
+}/* Education Section */
 .education {
     padding: 80px 20px;
     background-color: var(--background-color);
@@ -399,46 +411,71 @@ header {
     font-weight: bold;
 }
 
-.education-cards {
+/* Each education item */
+.education-item {
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px; /* Space between the text and the logo */
 }
 
-.education-card {
-    background-color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 12px;
-    padding: 20px;
-    width: 30%;
-    min-width: 250px;
+/* Logos aligned to the right */
+.education-item img {
+    max-width: 70px; /* Adjust the size of the logos */
+    object-fit: contain;
+    opacity: 0.8;
+}
+
+/* Text aligned to the left */
+.text-details {
     text-align: left;
+    flex-grow: 1;
 }
 
-.education-card h3 {
+.text-details h3 {
     color: var(--header-background);
-    margin-bottom: 15px;
+    font-size: 1.5em;
+    margin-bottom: 5px;
 }
 
-.education-card p {
+.text-details p {
     font-size: 1.1em;
-    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
 }
 
+/* Responsive Styles for Mobile */
 @media (max-width: 768px) {
-    .projects-cards, .education-cards {
-        flex-direction: column;
-        align-items: center;
+    .education-item {
+        flex-direction: column; /* Stack items on mobile */
+        text-align: center;
     }
 
-    .project-card, .education-card {
-        width: 100%;
-        margin-bottom: 20px;
+    .education-item img {
+        margin-top: 15px; /* Add space above logo when stacked */
+    }
+}
+/* Badge icon next to text */
+.badge-icon {
+    width: 25px;
+    height: auto;
+    vertical-align: middle; /* Aligns the badge with the middle of the text */
+    margin-left: 8px; /* Adds space between the text and the badge */
+    opacity: 0.9; /* Slight transparency */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .badge-icon {
+        width: 20px; /* Smaller width for mobile view */
+        margin-left: 5px;
+        vertical-align: text-bottom; /* Aligns the badge better in mobile */
     }
 }
 
-/* Verify Link */
+
+/* Verify Link Arrow */
 .verify-arrow {
     color: var(--accent-color);
     text-decoration: none;
@@ -449,6 +486,31 @@ header {
 
 .verify-arrow:hover {
     color: var(--header-background);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .education-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education-details img {
+        margin-bottom: 15px;
+    }
+
+    .text-details h3 {
+        font-size: 1.3em;
+    }
+
+    .text-details p {
+        font-size: 1em;
+    }
 }
 
 /* Footer Styles */
@@ -522,16 +584,4 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-}
-/* Initial state for fade-in elements */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-/* When the element is in the viewport */
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
 }
