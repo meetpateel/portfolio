@@ -1,250 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-	  <meta charset="UTF-8" />
-	  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	  <meta name="description" content="Meet Patel's Portfolio - Software Developer with expertise in .NET technologies, cloud computing, and project management." />
-	  <meta name="keywords" content="Meet Patel, Software Developer, Software Engineer, .NET, Cloud Computing, Portfolio, Azure, Full Stack Developer" />
-	  <meta name="author" content="Meet Patel" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet Patel's Portfolio - Software Developer with expertise in .NET technologies, cloud computing, and project management." />
+    <meta name="keywords" content="Meet Patel, Software Developer, Software Engineer, .NET, Cloud Computing, Portfolio, Azure, Full Stack Developer" />
+    <meta name="author" content="Meet Patel" />
 
-	  <title>Meet Patel - Professional Resume</title>
-	  
-	  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-	  <link rel="stylesheet" href="styles.css" />
-	  <link rel="icon" href="logo-no-background.ico" type="image/x-icon" />
+    <title>Meet Patel - Software Engineer</title>
 
-	  <!-- Open Graph -->
-	  <meta property="og:title" content="Meet Patel - Professional Resume" />
-	  <meta property="og:description" content="Meet Patel's Portfolio - Software Developer with expertise in .NET technologies, cloud computing, and project management." />
-	  <meta property="og:url" content="https://iammeetpatel.com" />
-	  <meta property="og:type" content="website" />
-	  <meta name="twitter:image" content="https://yourwebsite.com/path-to-image.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="logo-no-background.ico" type="image/x-icon" />
 
-	  <!-- Preload -->
-	  <link rel="preload" href="styles.css" as="style" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Meet Patel - Software Engineer" />
+    <meta property="og:description" content="Software Engineer with expertise in .NET technologies, cloud computing, and project management." />
+    <meta property="og:url" content="https://iammeetpatel.com" />
+    <meta property="og:type" content="website" />
 
-	  <!-- Structured Data -->
-	  <script type="application/ld+json">
-	   {
-		 "@context": "https://schema.org",
-		 "@type": "Person",
-		 "name": "Meet Patel",
-		 "jobTitle": "Software Developer",
-		 "url": "https://iammeetpatel.com",
-		 "sameAs": [
-		   "https://www.linkedin.com/in/iammeetpatel",
-		   "https://github.com/meetpateel"
-		 ]
-	   }
-	   </script>
-	</head>
-
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Meet Patel",
+      "jobTitle": "Software Engineer",
+      "url": "https://iammeetpatel.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/iammeetpatel",
+        "https://github.com/meetpateel"
+      ]
+    }
+    </script>
+  </head>
 
   <body>
-    <!-- Header -->
-    <header>
-      <div class="container header-container">
-        <div class="profile-pic">
-          <img
-            src="meet.patel.jpg"
-            alt="Meet Patel"
-          />
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">MP</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="meet.patel.jpg" alt="Meet Patel" />
         </div>
-        <div class="bio">
-          <h1>Meet Patel</h1>
-          <p>Software Engineer</p>
-          <ul class="contact-info">
-            <li>
-              <i class="fas fa-envelope"></i
-              ><a href="mailto:meet.pateel@gmail.com">meet.pateel@gmail.com</a>
-            </li>
-            <li>
-              <i class="fas fa-phone"></i
-              ><a href="tel:+16053703803">(605) 370-3803</a>
-            </li>
-            <li>
-              <i class="fab fa-linkedin"></i
-              ><a
-                href="https://www.linkedin.com/in/iammeetpatel"
-                target="_blank"
-                >LinkedIn</a
-              >
-            </li>
-            <li>
-              <i class="fab fa-github"></i
-              ><a href="https://github.com/meetpateel" target="_blank"
-                >GitHub</a
-              >
-            </li>
-          </ul>
+        <h1 class="hero-title">
+          <span class="greeting">Hello, I'm</span>
+          <span class="name">Meet Patel</span>
+        </h1>
+        <p class="hero-subtitle">Software Engineer</p>
+        <div class="hero-links">
+          <a href="mailto:meet.pateel@gmail.com" class="hero-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+16053703803" class="hero-link" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/iammeetpatel" target="_blank" rel="noopener" class="hero-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/meetpateel" target="_blank" rel="noopener" class="hero-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
         </div>
+        <a href="#about" class="scroll-cta">
+          <span>Scroll to explore</span>
+          <i class="fas fa-chevron-down"></i>
+        </a>
       </div>
     </header>
 
-    <!-- Main Section -->
     <main>
-      <!-- About Me Section -->
-      <section class="about-me" id="about-me">
+      <!-- About Section -->
+      <section class="section about" id="about">
         <div class="container">
-          <div class="intro">
-            <h2>Hello World!</h2>
-            <p class="highlight">
-              My name is Meet Patel. I’m a passionate software engineer with a
-              strong drive for business growth and impactful software solutions.
-            </p>
+          <h2 class="section-title">About Me</h2>
+          <div class="about-grid">
+            <div class="about-text">
+              <p class="about-lead">
+                A passionate software engineer with a strong drive for business growth and impactful software solutions.
+              </p>
+              <p>
+                With over 4 years of experience in software development, I have
+                worked extensively with .NET technologies and cloud computing.
+                At U.S. Bank, I led projects migrating legacy systems to .NET Core
+                and integrating cloud solutions using Microsoft Azure, delivering
+                enhanced performance and scalability.
+              </p>
+              <p>
+                My journey into tech began with a curiosity about how software
+                could solve real-world problems. I've worked with startups,
+                enterprises, and everything in between, gaining a well-rounded
+                perspective on how technology and business intersect.
+              </p>
+            </div>
+            <div class="about-highlights">
+              <div class="highlight-card">
+                <div class="highlight-number">4+</div>
+                <div class="highlight-label">Years Experience</div>
+              </div>
+              <div class="highlight-card">
+                <div class="highlight-number">5</div>
+                <div class="highlight-label">Companies</div>
+              </div>
+              <div class="highlight-card">
+                <div class="highlight-number">3+</div>
+                <div class="highlight-label">Major Projects</div>
+              </div>
+              <div class="highlight-card">
+                <div class="highlight-number">1</div>
+                <div class="highlight-label">Azure Cert</div>
+              </div>
+            </div>
           </div>
-          <div class="bio-story">
-            <p>
-              With over 4 years of experience in software development, I have
-              worked extensively with .NET technologies and cloud computing.
-              Recently, at U.S. Bank, I led projects that involved migrating
-              legacy systems to .NET Core and integrating cloud solutions using
-              Microsoft Azure, delivering enhanced performance and scalability.
-            </p>
-            <p>
-              My journey into tech began with a curiosity about how software
-              could solve real-world problems. I’ve worked with startups,
-              enterprises, and everything in between, gaining a well-rounded
-              perspective on how technology and business intersect.
-            </p>
-          </div>
-          <div class="personal-touch">
-            <h3>
-              "I believe in continuous learning and strategic problem-solving."
-            </h3>
-            <p>
-              Outside of my technical work, I manage various business interests,
-              including projects in hospitality. When I’m not working, you’ll
-              find me exploring new technologies, building side projects, and
-              connecting with professionals in both tech and business
-              communities.
-            </p>
-          </div>
-        </div>
-        <!-- Scroll down indicator -->
-        <div class="scroll-indicator">
-          <i class="fas fa-chevron-down"></i>
+          <blockquote class="about-quote">
+            "I believe in continuous learning and strategic problem-solving."
+          </blockquote>
         </div>
       </section>
 
       <!-- Experience Section -->
-      <section class="experience" id="experience">
+      <section class="section experience" id="experience">
         <div class="container">
-          <h2><i class="fas fa-briefcase"></i> Experience</h2>
-          <!-- Timeline Entry 1 -->
-          <div class="timeline-entry">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Software Engineer</h3>
-              <p class="company">
-                <strong>U.S. Bank</strong>
-              </p>
-              <p class="date">March 2022 - Present</p>
-              <p>
-                Migrated legacy systems to the latest .Net Core versions.
-                Integrated cloud solutions using Azure.
-              </p>
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3>Software Engineer</h3>
+                  <span class="timeline-date">Mar 2022 - Present</span>
+                </div>
+                <p class="timeline-company">U.S. Bank</p>
+                <p class="timeline-desc">
+                  Migrated legacy systems to the latest .NET Core versions.
+                  Integrated cloud solutions using Microsoft Azure, improving
+                  performance and scalability across critical banking applications.
+                </p>
+                <div class="timeline-tags">
+                  <span>.NET Core</span>
+                  <span>Azure</span>
+                  <span>C#</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3>Software Developer</h3>
+                  <span class="timeline-date">May 2021 - Jan 2022</span>
+                </div>
+                <p class="timeline-company">TrendSource, Inc.</p>
+                <p class="timeline-desc">
+                  Migrated an internal tool from ASP.NET Framework to ASP.NET Core 3.1.
+                  Implemented new features using HTML, Bootstrap, and jQuery.
+                </p>
+                <div class="timeline-tags">
+                  <span>ASP.NET Core</span>
+                  <span>Bootstrap</span>
+                  <span>jQuery</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3>Software Developer</h3>
+                  <span class="timeline-date">Jul 2020 - May 2021</span>
+                </div>
+                <p class="timeline-company">Citi</p>
+                <p class="timeline-desc">
+                  Rewrote internal reporting systems and worked on .NET Core/.NET
+                  Framework web applications for financial services.
+                </p>
+                <div class="timeline-tags">
+                  <span>.NET Core</span>
+                  <span>.NET Framework</span>
+                  <span>SQL</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3>Software Engineer</h3>
+                  <span class="timeline-date">Jan 2020 - Jul 2020</span>
+                </div>
+                <p class="timeline-company">POET</p>
+                <p class="timeline-desc">
+                  Developed internal applications using the .NET framework
+                  to support business operations.
+                </p>
+                <div class="timeline-tags">
+                  <span>.NET</span>
+                  <span>C#</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-marker"></div>
+              <div class="timeline-card">
+                <div class="timeline-header">
+                  <h3>Automation Tester</h3>
+                  <span class="timeline-date">Jan 2017 - Jan 2020</span>
+                </div>
+                <p class="timeline-company">Daktronics</p>
+                <p class="timeline-desc">
+                  Implemented system and integration tests for Venus Suite,
+                  ensuring software quality and reliability.
+                </p>
+                <div class="timeline-tags">
+                  <span>Test Automation</span>
+                  <span>QA</span>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Timeline Entry 2 -->
-          <div class="timeline-entry">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Software Developer</h3>
-              <p class="company">
-                <strong>TrendSource, Inc.</strong>
-              </p>
-              <p class="date">May 2021 - January 2022</p>
-              <p>
-                Migrated an internal tool from Asp.net Framework to Asp.net Core
-                3.1. Implemented new features using HTML, Bootstrap, and JQuery.
-              </p>
-            </div>
-          </div>
-          <!-- Timeline Entry 3 -->
-          <div class="timeline-entry">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Software Developer</h3>
-              <p class="company">
-                <strong>Citi</strong>
-              </p>
-              <p class="date">July 2020 - May 2021</p>
-              <p>
-                Rewrote internal reporting systems and worked on .Net Core/.NET
-                Framework web apps.
-              </p>
-            </div>
-          </div>
-          <!-- Timeline Entry 4 -->
-          <div class="timeline-entry">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Software Engineer</h3>
-              <p class="company">
-                <strong>POET</strong>
-              </p>
-              <p class="date">January 2020 - July 2020</p>
-              <p>Developed internal applications using the .NET framework.</p>
-            </div>
-          </div>
-		            <!-- Timeline Entry 5 -->
-          <div class="timeline-entry">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <h3>Automation Tester</h3>
-              <p class="company">
-                <strong>Daktronics</strong>
-              </p>
-              <p class="date">January 2017 - January 2020</p>
-              <p>Implemented System and Integrated Tests for Venus Suite</p>
-            </div>
-          </div>
-		  
         </div>
       </section>
 
       <!-- Projects Section -->
-      <section class="projects" id="projects">
+      <section class="section projects" id="projects">
         <div class="container">
-          <h2><i class="fas fa-code-branch"></i> Projects</h2>
-          <div class="row">
-            <!-- Project 1 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Project Management System</h5>
-                  <p class="card-text">
-                    Developed a project management tool using ASP.NET Core and
-                    SQL Server, enabling real-time task tracking for teams.
-                  </p>
-                </div>
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-icon">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <h3>Project Management System</h3>
+              <p>
+                Developed a project management tool using ASP.NET Core and
+                SQL Server, enabling real-time task tracking for teams.
+              </p>
+              <div class="project-tech">
+                <span>ASP.NET Core</span>
+                <span>SQL Server</span>
+                <span>C#</span>
               </div>
             </div>
-            <!-- Project 2 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">E-commerce Platform</h5>
-                  <p class="card-text">
-                    Built a scalable e-commerce platform with product listings,
-                    shopping carts, and payment integrations using Microsoft
-                    Azure.
-                  </p>
-                </div>
+
+            <div class="project-card">
+              <div class="project-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <h3>E-commerce Platform</h3>
+              <p>
+                Built a scalable e-commerce platform with product listings,
+                shopping carts, and payment integrations using Microsoft Azure.
+              </p>
+              <div class="project-tech">
+                <span>Azure</span>
+                <span>.NET</span>
+                <span>Payments API</span>
               </div>
             </div>
-            <!-- Project 3 -->
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card h-100">
-                <div class="card-body">
-                  <h5 class="card-title">Hotel Management Software</h5>
-                  <p class="card-text">
-                    Created a hotel management solution, automating reservations
-                    and inventory using C# and Azure DevOps.
-                  </p>
-                </div>
+
+            <div class="project-card">
+              <div class="project-icon">
+                <i class="fas fa-hotel"></i>
+              </div>
+              <h3>Hotel Management Software</h3>
+              <p>
+                Created a hotel management solution, automating reservations
+                and inventory using C# and Azure DevOps.
+              </p>
+              <div class="project-tech">
+                <span>C#</span>
+                <span>Azure DevOps</span>
+                <span>SQL</span>
               </div>
             </div>
           </div>
@@ -252,44 +304,77 @@
       </section>
 
       <!-- Skills Section -->
-      <section class="skills" id="skills">
+      <section class="section skills" id="skills">
         <div class="container">
-          <h2><i class="fas fa-tools"></i> Proficiency</h2>
-          <ul class="skills-list">
-            <li>.NET</li>
-            <li>React</li>
-            <li>Microsoft Azure</li>
-            <li>HTML</li>
-            <li>Javascript</li>
-            <li>C#</li>
-          </ul>
+          <h2 class="section-title">Skills & Proficiency</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3><i class="fas fa-code"></i> Languages</h3>
+              <div class="skill-tags">
+                <span>C#</span>
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>SQL</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
+              <div class="skill-tags">
+                <span>.NET / .NET Core</span>
+                <span>ASP.NET</span>
+                <span>React</span>
+                <span>Bootstrap</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+              <div class="skill-tags">
+                <span>Microsoft Azure</span>
+                <span>Azure DevOps</span>
+                <span>CI/CD</span>
+                <span>Git</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h3><i class="fas fa-database"></i> Data & Tools</h3>
+              <div class="skill-tags">
+                <span>SQL Server</span>
+                <span>REST APIs</span>
+                <span>Agile/Scrum</span>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Education Section -->
-      <section class="education" id="education">
+      <section class="section education" id="education">
         <div class="container">
-          <h2><i class="fas fa-certificate"></i> Education</h2>
-          <div class="education-item">
-            <div class="text-details">
+          <h2 class="section-title">Education & Certifications</h2>
+          <div class="education-grid">
+            <div class="education-card">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
               <h3>Bachelor of Science in Computer Science</h3>
-              <p>
-                <strong>South Dakota State University</strong>
-                <br />Graduated: 2020
-              </p>
+              <p class="education-school">South Dakota State University</p>
+              <p class="education-year">Graduated 2020</p>
             </div>
-          </div>
-          <div class="education-item">
-            <div class="text-details">
-              <h3>Certifications</h3>
-              <p>
-                Microsoft Certified: Azure Fundamentals
-                <a
-                  href="https://www.credly.com/badges/adef1905-4d69-46ff-b38b-4b259ba41a99/linked_in_profile"
-                >
-                  <i class="fas fa-arrow-right"></i>
-                </a>
-              </p>
+            <div class="education-card">
+              <div class="education-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h3>Microsoft Certified: Azure Fundamentals</h3>
+              <p class="education-school">Microsoft</p>
+              <a
+                href="https://www.credly.com/badges/adef1905-4d69-46ff-b38b-4b259ba41a99/linked_in_profile"
+                target="_blank"
+                rel="noopener"
+                class="education-link"
+              >
+                Verify Credential <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -297,41 +382,86 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <p>&copy; 2026 Meet Patel. All Rights Reserved.</p>
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="mailto:meet.pateel@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/iammeetpatel" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/meetpateel" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+          <p class="footer-copy">&copy; 2026 Meet Patel. All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Meet Patel",
-        "jobTitle": "Software Engineer",
-        "sameAs": [
-          "https://www.linkedin.com/in/iammeetpatel",
-          "https://github.com/meetpateel"
-        ],
-        "url": "https://iammeetpatel.com"
-      }
-    </script>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        // Select the scroll indicator element
-        const scrollIndicator = document.querySelector(".scroll-indicator");
+        // Navbar scroll effect
+        const navbar = document.getElementById("navbar");
+        window.addEventListener("scroll", function () {
+          navbar.classList.toggle("scrolled", window.scrollY > 50);
+        });
 
-        // Function to hide or show the indicator based on scroll position
-        function toggleScrollIndicator() {
-          if (window.scrollY > 0) {
-            scrollIndicator.classList.add("hidden"); // Hide when scrolling down
-          } else {
-            scrollIndicator.classList.remove("hidden"); // Show when back at the top
-          }
-        }
+        // Mobile nav toggle
+        const navToggle = document.getElementById("nav-toggle");
+        const navLinks = document.getElementById("nav-links");
+        navToggle.addEventListener("click", function () {
+          navLinks.classList.toggle("active");
+          navToggle.classList.toggle("active");
+        });
 
-        // Listen for the scroll event
-        window.addEventListener("scroll", toggleScrollIndicator);
+        // Close mobile nav on link click
+        navLinks.querySelectorAll("a").forEach(function (link) {
+          link.addEventListener("click", function () {
+            navLinks.classList.remove("active");
+            navToggle.classList.remove("active");
+          });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              target.scrollIntoView({ behavior: "smooth", block: "start" });
+            }
+          });
+        });
+
+        // Scroll-reveal animation
+        var observer = new IntersectionObserver(
+          function (entries) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("revealed");
+              }
+            });
+          },
+          { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+        );
+
+        document.querySelectorAll(
+          ".timeline-item, .project-card, .skill-category, .education-card, .highlight-card, .about-text, .about-quote"
+        ).forEach(function (el) {
+          observer.observe(el);
+        });
+
+        // Active nav link on scroll
+        var sections = document.querySelectorAll("section[id]");
+        window.addEventListener("scroll", function () {
+          var scrollY = window.scrollY + 100;
+          sections.forEach(function (section) {
+            var top = section.offsetTop;
+            var height = section.offsetHeight;
+            var id = section.getAttribute("id");
+            var link = document.querySelector('.nav-links a[href="#' + id + '"]');
+            if (link) {
+              link.classList.toggle("active", scrollY >= top && scrollY < top + height);
+            }
+          });
+        });
       });
     </script>
   </body>
