@@ -155,6 +155,15 @@ img {
 }
 
 /* ===== Hero ===== */
+/* Reset any inherited/cached header styles */
+header,
+header::before,
+header::after {
+  background-image: none !important;
+  box-shadow: none;
+  border-bottom: none;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
@@ -163,11 +172,16 @@ img {
   position: relative;
   overflow: hidden;
   text-align: center;
+  background-color: var(--bg);
+  background-image: none;
 }
 
 .hero-bg {
   position: absolute;
-  inset: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background:
     radial-gradient(ellipse 60% 50% at 50% 40%, var(--accent-glow), transparent),
     radial-gradient(ellipse 80% 60% at 20% 80%, rgba(139, 92, 246, 0.08), transparent),
